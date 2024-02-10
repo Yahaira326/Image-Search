@@ -31,6 +31,7 @@ async function searchImages() {
     imageLink.target = "_blank";
     imageLink.textContent = result.alt_description;
 
+    
     imageWrapper.appendChild(image);
     imageWrapper.appendChild(imageLink);
     searchResultsEl.appendChild(imageWrapper);
@@ -42,6 +43,7 @@ async function searchImages() {
     showMoreButtonEl.style.display = "block";
   }
 }
+
 
 formEl.addEventListener("submit", (event) => {
   event.preventDefault();
